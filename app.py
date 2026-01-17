@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app, origins=["*"])
 
 API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyDoM-RWga4GUGk9ugReXckXORnvtNcDYUo')
-MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/')
+MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb+srv://mohitrathore2858_db_user:KwvczaQy3HylcKoH@cluster0.pgiqzre.mongodb.net/cpa?appName=Cluster0')
 PORT = int(os.getenv('PORT', 3000))
 
 genai.configure(api_key=API_KEY)
